@@ -1,0 +1,23 @@
+@import "./layout/footer.scss" ;
+  /*footer*/
+   footer {
+    background-color: rgb(53,53,53);
+} 
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+}
+footer p {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+.gray {
+    color: rgb(255,255,255);
+    padding-right: 1rem;
+}
+.logo_footer {
+    font-family: Shrikhand,"cursive";
+    font-size: 1.3rem;
+    margin-top:20px;  
+}

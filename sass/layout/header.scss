@@ -1,0 +1,12 @@
+@import "./layout/header.scss" ;
+header {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   box-shadow:0 0 0.5rem gray;
+}
+header img {
+   width:200px
+}
