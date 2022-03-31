@@ -1,6 +1,6 @@
 @import "./layout/footer.scss" ;
   /*footer*/
-   footer {
+footer {
     background-color: rgb(53,53,53);
 } 
 .footer_container {
@@ -8,16 +8,30 @@
     flex-direction: column;
     padding:1rem;
 }
-footer p {
-    text-decoration: none;
-    color: rgb(255,255,255);
-}
-.gray {
-    color: rgb(255,255,255);
-    padding-right: 1rem;
-}
+/*logo*/
 .logo_footer {
     font-family: Shrikhand,"cursive";
     font-size: 1.3rem;
     margin-top:20px;  
+}
+/*icone*/
+.gray {
+    color: rgb(255,255,255);
+    padding-right: 1rem;
+}
+  .footer_container a {
+    text-decoration: none;
+  }
+  footer ul {
+    padding-left: 5px;
+  }
+  footer p {
+    text-decoration: none;
+    color: rgb(255,255,255);
+    font-size: 18px;
+}
+/*footer sans icone*/
+footer p {
+    color: white;
+    font-size: 18px;
 }
