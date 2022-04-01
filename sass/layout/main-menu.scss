@@ -1,159 +1,158 @@
 @import "./layout/main-menu.scss" ;
 body {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: "Roboto";
-  margin: 0;
-  width: 100%;
-}
-header {
-  display: flex;
-  flex-direction: column;
-}
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-a {
-  text-decoration: none;
-  color: #000;
-}
-nav i {
-  padding: 0 20px;
-}
-nav h1 {
-  font-size: 2em;
-  font-family:Shrikhand, sans-serif; 
-}
-header img {
-  width: 100%;
-}
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img1 {
-  width: 100%;
-  height: 100%;
-}
-
-/*bouton*/
-.restaurants_btn {
-  padding: 10px;
-  border-radius: 20px;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  text-decoration: none;
-  color: white;
-  border: none;
-  box-shadow: 2px 1px 8px -3px gray;
-  width: 250px;
-  height: 25px;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-h2 {
-  font-family:Shrikhand, sans-serif; 
-  font-size: 1.5em;
-}
-
-/*nom resto ex:la palette*/
-.resto {
-  display: flex;
-  justify-content: space-between;
-}
-/*coeur menu restaurants*/
-.heart-btn {
-  cursor: pointer;
-
-}
-.fa-heart {
-  cursor: pointer;
-  font-size: 1.5rem;
-  position: absolute;
-  opacity: 0;
-}
-.fas:hover {
-  color: transparent;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 1;
-  transition: 0.6s;
-  display: block;
-}
-.far {
-  opacity: 1;
-  padding: 0;
-}
-/*choix de carte*/
-section {
-  background-color: #f6f6f6;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  padding-left:1.5rem;
-  border-radius: 3rem;
-  width: 345px;
-}
-.menu_choix {
-  background-color: #FFF;
-  width: 320px;
-  border-radius: 1rem;
-  margin: 1.5rem 0;
-}
-.clic_choix {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Roboto";
+    margin: 0;
+    width: 100%;
+  }
+  header {
     display: flex;
-}
-/*déscription des choix (entrées,plats,desserts)*/
-.texte {
-  left: 1rem;
-  padding-left: 0.5rem;
-  font-family: 'Roboto';
-  line-height: 0.5;
-}
-.fas:hover {
-  color: transparent;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 1;
-  transition: 0.6s;
-  display: block;
-}
-.far {
-  opacity: 1;
-  padding: 0;
-}
-/*footer*/
+    flex-direction: column;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  nav i {
+    padding: 0 20px;
+  }
+  nav h1 {
+    font-size: 2em;
+    font-family:Shrikhand, sans-serif; 
+  }
+  header img {
+    width: 100%;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img1 {
+    width: 100%;
+    height: 100%;
+  }
+  /*bouton*/
+  .restaurants_btn {
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    text-decoration: none;
+    color: white;
+    border: none;
+    box-shadow: 2px 1px 8px -3px gray;
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  h2 {
+    font-family:Shrikhand, sans-serif; 
+    font-size: 1.5em;
+  }
+  /*nom resto ex:la palette*/
+  .resto {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fa-heart {
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    opacity: 0;
+  }
+  .fas:hover {
+    color: transparent;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 1;
+    transition: 0.6s;
+    display: block;
+  }
+  .far {
+    opacity: 1;
+    padding: 0;
+  }
+  /*choix de carte*/
+  section {
+    background-color: #f6f6f6;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding-left:1.5rem;
+    border-radius: 3rem;
+    width: 345px;
+  }
+  .menu_choix {
+    background-color: #FFF;
+    width: 320px;
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+  }
+  .clic_choix {
+      display: flex;
+  }
+  /*déscription des choix (entrées,plats,desserts)*/
+  .texte {
+    left: 1rem;
+    padding-left: 0.5rem;
+    font-family: 'Roboto';
+    line-height: 0.5;
+  }
+  .fas:hover {
+    color: transparent;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 1;
+    transition: 0.6s;
+    display: block;
+  }
+  .far {
+    opacity: 1;
+    padding: 0;
+  }
+  /*footer*/
 footer {
-  background-color: #353535;
-}
+  background-color: rgb(53,53,53);
+} 
 .logo_footer {
-  font-family: Shrikhand, "cursive";
+  font-family: Shrikhand,"cursive";
   font-size: 1.3rem;
-  margin-top: 20px;
+  margin-top:20px;  
+}
+/*icone*/
+.gray {
+  color: rgb(255,255,255);
+  padding-right: 1rem;
+}
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  padding:1rem;
 }
 .footer_container a {
   text-decoration: none;
 }
-
-.footer_container {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem; 
+footer ul {
+  padding-left: 5px;
 }
+footer p {
+  text-decoration: none;
+  color: rgb(255,255,255);
+  font-size: 18px;
+}
+/*footer sans icone*/
 footer p {
   color: white;
   font-size: 18px;
-}
-.gray {
-  color: white;
-  padding-right: 1rem;
-}
-footer ul {
-  padding-left: 5px;
 }
