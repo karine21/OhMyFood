@@ -1,27 +1,27 @@
-@import "./layout/header-menu.scss" ;
 /*page menu*/
-header {
+  header {
     display: flex;
     flex-direction: column;
-  }
+    text-align: center;
+    }
   nav {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    }
   a {
     text-decoration: none;
     color: #000;
-  }
+    }
   nav i {
     padding: 0 20px;
-  }
+    }
   nav h1 {
     font-size: 2em;
     font-family:Shrikhand, sans-serif; 
-  }
-  header img {
-    width: 100%;
-  }
-  
- 
+    }
+   header img {
+    max-width: 100%;
+    height: 280px;
+    object-fit: cover;
+    }
