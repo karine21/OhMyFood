@@ -1,3 +1,4 @@
+/*page menu*/
 body {
   box-sizing: border-box;
   font-size: 16px;
@@ -5,42 +6,44 @@ body {
   margin: 0;
   width: 100%;
 }
-/*page menu*/
 header {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   }
-  nav {
-    display: flex;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
-  a {
-    text-decoration: none;
-    color: #000;
+a {
+  text-decoration: none;
+  color: #000;
   }
-  nav i {
-    padding: 0 20px;
+nav i {
+  padding: 0 20px;
   }
-  nav h1 {
-    font-size: 2em;
-    font-family:Shrikhand, sans-serif; 
+nav h1 {
+  font-size: 2em;
+  font-family:Shrikhand, sans-serif; 
   }
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-  header img {
-    width: 100%;
-  }
-  heart-btn {
-    display: flex;
-    justify-content: space-between;
-  }
-  .img {
-    display: flex;
-    flex-direction: column;
+ img {
+  max-width: 100%;
+  height: 280px;
+  object-fit: cover;
   }
 /*nom resto ex:la palette*/
+.container {
+  margin-top: -4px;
+}
+.nom {
+  display: flex;
+  flex-direction: column;
+  }
+h2 {
+  font-family:Shrikhand;
+  font-size: 1.5em;
+  }
 .resto {
   display: flex;
   justify-content: space-between;
@@ -48,7 +51,10 @@ header {
 /*coeur menu restaurants*/
 .heart-btn {
   cursor: pointer;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
 }
 .fa-heart {
   cursor: pointer;
@@ -77,67 +83,102 @@ section {
   justify-content: center;
   padding-left:1.5rem;
   border-radius: 3rem;
-  width: 345px;
 }
+h3 {
+  text-transform: uppercase;
+  position: relative;
+     /*&::after {
+      content: "";
+      position: absolute;
+      border-bottom: 3px solid #99E2D0;
+      padding-right: 2.5em;
+      top: 1.4em;
+      left: 0;*/
+}
+/*déscription des choix (entrées,plats,desserts)*/
 .menu_choix {
-  background-color: #FFF;
   width: 320px;
   border-radius: 1rem;
   margin: 1.5rem 0;
 }
-.clic_choix {
-    display: flex;
-}
-/*déscription des choix (entrées,plats,desserts)*/
 .texte {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 15px 0;
+  width: 350px;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #ccc;
+  cursor: pointer;
+  animation: show-plat 2s forwards;
   left: 1rem;
   padding-left: 0.5rem;
   font-family: 'Roboto';
   line-height: 0.5;
 }
-.fas:hover {
-  color: transparent;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 1;
-  transition: 0.6s;
-  display: block;
+.clic_choix {
+  display: flex;
+  background-color:#99E2D0; 
 }
-.far {
-  opacity: 1;
-  padding: 0;
+/*bouton commande*/
+.restaurants_btn {
+    padding: 10px;
+    border-radius:20px;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));  ;
+    text-decoration: none;
+    color: white;
+    border: none;
+    box-shadow:2px 1px 8px -3px gray; 
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
 }
+.restaurants_btn:hover {
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    opacity: 0.7;
+    box-shadow: 0px 12px 30px -5px rgba(0,0,0,0.85);
+  }
 /*footer*/
 footer {
-  background-color: #353535;
-}
+  background-color: rgb(53,53,53);
+} 
 .logo_footer {
-  font-family: Shrikhand, "cursive";
+  font-family: Shrikhand,"cursive";
   font-size: 1.3rem;
-  margin-top: 20px;
+  margin-top:20px;  
+}
+/*icone*/
+.gray {
+  color: rgb(255,255,255);
+  padding-right: 1rem;
+}
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  padding:1rem;
 }
 .footer_container a {
   text-decoration: none;
 }
-
-.footer_container {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem; 
+footer ul {
+  padding-left: 5px;
 }
+footer p {
+  text-decoration: none;
+  color: rgb(255,255,255);
+  font-size: 18px;
+}
+/*footer sans icone*/
 footer p {
   color: white;
   font-size: 18px;
 }
-.gray {
-  color: white;
-  padding-right: 1rem;
-}
-footer ul {
-  padding-left: 5px;
-}
-
-
-
-
