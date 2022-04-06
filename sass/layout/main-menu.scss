@@ -4,29 +4,8 @@ body {
     font-family: "Roboto";
     margin: 0;
     width: 100%;
-  }
-header {
-   display: flex;
-   flex-direction: column;
-   text-align: center;
-  }
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-a {
-    text-decoration: none;
-    color: #000;
-  }
-nav i {
-    padding: 0 20px;
-  }
-nav h1 {
-    font-size: 2em;
-    font-family:Shrikhand, sans-serif; 
-  }
-header img {
+  } 
+main img menu {
     max-width: 100%;
     height: 280px;
     object-fit: cover;
@@ -39,7 +18,7 @@ header img {
     display: flex;
     flex-direction: column;
     }
-h2 {
+h2 menu {
     font-family:Shrikhand;
     font-size: 1.5em;
   }
@@ -47,27 +26,9 @@ h2 {
     display: flex;
     justify-content: space-between;
   }
-  .fa-heart {
-    cursor: pointer;
-    font-size: 1.5rem;
-    position: absolute;
-    opacity: 0;
-  }
-  .fas:hover {
-    color: transparent;
-    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9),#FF79DA );
-    background-clip: text;
-    -webkit-background-clip: text;
-    opacity: 1;
-    transition: 0.6s;
-    display: block;
-  }
-  .far {
-    opacity: 1;
-    padding: 0;
-  }
+  
   /*choix de carte*/
-  section {
+  section menu {
     background-color: #f6f6f6;
     flex-direction: column;
     display: flex;
@@ -75,7 +36,7 @@ h2 {
     padding-left:1.5rem;
     border-radius: 3rem; 
   }
-  h3 {
+   menu h3  {
     text-transform: uppercase;
     border-bottom: 3px solid #99E2D0;
     padding-right: 2.5em;
@@ -131,38 +92,5 @@ h2 {
     opacity: 0.7;
     box-shadow: 0px 12px 30px -5px rgba(0,0,0,0.85);
   }
-  /*footer*/
-footer {
-  background-color: rgb(53,53,53);
-} 
-.logo_footer {
-  font-family: Shrikhand,"cursive";
-  font-size: 1.3rem;
-  margin-top:20px;  
-}
-/*icone*/
-.gray {
-  color: rgb(255,255,255);
-  padding-right: 1rem;
-}
-.footer_container {
-  display: flex;
-  flex-direction: column;
-  padding:1rem;
-}
-.footer_container a {
-  text-decoration: none;
-}
-footer ul {
-  padding-left: 5px;
-}
-footer p {
-  text-decoration: none;
-  color: rgb(255,255,255);
-  font-size: 18px;
-}
-/*footer sans icone*/
-footer p {
-  color: white;
-  font-size: 18px;
-}
+
+
