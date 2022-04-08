@@ -16,7 +16,7 @@ body {
     /*animation: 4s; */ 
 }
 /*.spinner {
-    background: url("cloche.jpg");
+    background: url(".jpg");
   } 
     @keyframes loader { {
       0% {
@@ -51,9 +51,6 @@ section p {
     text-align: center;
 }
 /*fonctionnement*/
-.section1 {
-    background-color: white;
-  }
 ol {
     display: flex;
     flex-wrap: wrap;
@@ -63,12 +60,14 @@ li {
     align-items: center;
     background-color: #f6f6f6;
     flex-grow: 1;
-    padding: 1rem 2rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 1.2rem;
     box-shadow:2px 1px 8px -3px rgb(161, 159, 159); 
     margin-bottom: 1.5rem;
-    list-style: none;  
+    list-style: none; 
+    font-weight: bold;
     position: relative;  
+    display: flex;
 }
 .number {
     color: rgb(147,86,220);
@@ -85,11 +84,12 @@ li {
 }
 .genre h2  { 
     margin: 3rem 0 3rem 0.5rem;
+    font-family: "Roboto";
 }
 /*icone*/
 .genre i {
     color: rgb(126,126,126);
-    margin: 0 25px 0 25px;
+    margin: 0 20px 0 20px;
 }
 i.fa-store {
     color: rgb(147,86,220);
@@ -102,37 +102,49 @@ i.fa-store {
     background-color:rgb(246,246,246);
     margin: auto;
 }
-.Restaurants h2 {
-    padding: 30px;
+#Restaurants h2 {
+    padding-left: 1rem;
+    font-family: "Roboto";
 }
 .container {
     display: flex;
     justify-content: space-evenly;
     flex-flow: wrap; 
-    align-items: center; 
+    align-items: center;  
+    margin-bottom: 45px;
 }
 figcaption {
     display:flex;  
 }
-.resto {
-    padding-left: 20px;
+figcaption p {
+    color:#616060;
+    font-size: 17px;
 }
-.card-new {
+.card_resto {
+    padding-left: 1rem;
+    font-family: 'Roboto';
+    line-height: 0.5;
+    padding-bottom: 5px;
+}
+.card {
+    width: 95%;
+    margin: 8px;
+    border-radius:15px;
+    background-color: rgb(255,255,255);
+    box-shadow: 0 5px 15px 0 rgb(201, 198, 198);
+    position: relative;
+}
+.card_new {
     background-color: rgb(153,226,208);
     color: #1b6150;
     position: absolute;
-    right: 3.7rem;
+    right: 0.7rem;
+    top:1rem;
     padding:8px;
-}
-.card {
-    width: 90%;
-    border-radius:30px;
-    background-color: rgb(255,255,255);
-    box-shadow: 0 5px 15px 0 rgb(201, 198, 198);
 }
 .card img {
     width: 100%;
-    border-radius: 25px;
     height: 180px;
     object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
 }

@@ -7,11 +7,11 @@
   color: white;
   border: none;
   box-shadow: 2px 1px 8px -3px gray;
-  width: 250px;
+  width: 200px;
   height: 25px;
   text-align: center;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   cursor: pointer;
 }
 
@@ -123,28 +123,31 @@ footer p {
 /*page menu*/
 .header-menu {
   display: flex;
-  flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .header-menu nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Shrikhand, "cursive";
+  font-size: 1.2em;
 }
 
+/*flèche*/
 a {
   text-decoration: none;
   color: #000;
 }
 
-nav i {
-  padding: 0 20px;
+.icone {
+  padding: 15px 25px 0px 20px;
 }
 
-nav h1 {
-  font-size: 2em;
-  font-family: Shrikhand, sans-serif;
+.header-menu nav h1 {
+  text-align: center;
+  padding-left: 25px;
 }
 
 /*page principale*/
@@ -169,23 +172,19 @@ body {
   width: 100%;
 }
 
-main img menu {
-  max-width: 100%;
+.main-menu img {
+  width: 100%;
   height: 280px;
   object-fit: cover;
 }
 
 /*nom resto ex:la palette*/
-.container {
-  margin-top: -4px;
-}
-
 .nom {
   display: flex;
   flex-direction: column;
 }
 
-h2 menu {
+h2 {
   font-family: Shrikhand;
   font-size: 1.5em;
 }
@@ -205,68 +204,68 @@ section menu {
   border-radius: 3rem;
 }
 
-menu h3 {
+.cards_choix {
+  margin: 0;
+}
+
+.cards_choix h3 {
   text-transform: uppercase;
   border-bottom: 3px solid #99E2D0;
-  padding-right: 2.5em;
-  top: 1.4em;
-  left: 0;
+  width: 45px;
+  margin-left: 1rem;
+}
+
+h4 {
+  padding-top: 0;
+  /*juste pour moi visuel*/
 }
 
 /*déscription des choix (entrées,plats,desserts)*/
-.menu_choix {
-  width: 320px;
-  border-radius: 1rem;
-  margin: 1.5rem 0;
+.choix_plat {
+  display: flex;
+  margin: 0 10px 15px 10px;
+  width: 340px;
+  height: 80px;
+  overflow: hidden;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 2px 1px 8px -3px #a19f9f;
+  cursor: pointer;
+  padding-left: 0.5rem;
+  animation: choix 2s forwards;
 }
 
 .texte {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  margin: 15px 0;
-  width: 350px;
-  overflow: hidden;
-  font-family: "Roboto", sans-serif;
-  background-color: #FFF;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px #ccc;
-  cursor: pointer;
-  animation: top 2s forwards;
-  left: 1rem;
-  padding-left: 0.5rem;
+  width: 290px;
+  /*juste pour moi visuel*/
   line-height: 0.5;
 }
 
+.texte p {
+  text-align: inherit;
+}
+
+.prix {
+  padding: 12px;
+  /*juste pour moi visuel*/
+}
+
 .clic_choix {
-  display: flex;
+  width: 60px;
+  height: 60px;
+  padding-top: 20px;
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+  color: #FFF;
   background-color: #99E2D0;
 }
 
-/*bouton commande*/
-.restaurants_btn {
-  padding: 10px;
-  border-radius: 20px;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), #FF79DA);
-  text-decoration: none;
-  color: white;
-  border: none;
-  box-shadow: 2px 1px 8px -3px gray;
-  width: 250px;
-  height: 25px;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 30px;
-  cursor: pointer;
+.clic_choix circle {
+  transform: rotate(-180deg);
+  transition: transform 1s;
 }
 
-.restaurants_btn:hover {
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  opacity: 0.7;
-  box-shadow: 0px 12px 30px -5px rgba(0, 0, 0, 0.85);
-}
-
+@keyframes choix {}
 body {
   box-sizing: border-box;
   font-size: 16px;
@@ -287,7 +286,7 @@ body {
 }
 
 /*.spinner {
-    background: url("cloche.jpg");
+    background: url(".jpg");
   } 
     @keyframes loader { {
       0% {
@@ -326,10 +325,6 @@ section p {
 }
 
 /*fonctionnement*/
-.section1 {
-  background-color: white;
-}
-
 ol {
   display: flex;
   flex-wrap: wrap;
@@ -340,12 +335,14 @@ li {
   align-items: center;
   background-color: #f6f6f6;
   flex-grow: 1;
-  padding: 1rem 2rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 1.2rem;
   box-shadow: 2px 1px 8px -3px #a19f9f;
   margin-bottom: 1.5rem;
   list-style: none;
+  font-weight: bold;
   position: relative;
+  display: flex;
 }
 
 .number {
@@ -364,12 +361,13 @@ li {
 
 .genre h2 {
   margin: 3rem 0 3rem 0.5rem;
+  font-family: "Roboto";
 }
 
 /*icone*/
 .genre i {
   color: #7e7e7e;
-  margin: 0 25px 0 25px;
+  margin: 0 20px 0 20px;
 }
 
 i.fa-store {
@@ -385,8 +383,9 @@ i.fa-store {
   margin: auto;
 }
 
-.Restaurants h2 {
-  padding: 30px;
+#Restaurants h2 {
+  padding-left: 1rem;
+  font-family: "Roboto";
 }
 
 .container {
@@ -394,36 +393,48 @@ i.fa-store {
   justify-content: space-evenly;
   flex-flow: wrap;
   align-items: center;
+  margin-bottom: 45px;
 }
 
 figcaption {
   display: flex;
 }
 
-.resto {
-  padding-left: 20px;
+figcaption p {
+  color: #616060;
+  font-size: 17px;
 }
 
-.card-new {
-  background-color: #99e2d0;
-  color: #1b6150;
-  position: absolute;
-  right: 3.7rem;
-  padding: 8px;
+.card_resto {
+  padding-left: 1rem;
+  font-family: "Roboto";
+  line-height: 0.5;
+  padding-bottom: 5px;
 }
 
 .card {
-  width: 90%;
-  border-radius: 30px;
+  width: 95%;
+  margin: 8px;
+  border-radius: 15px;
   background-color: white;
   box-shadow: 0 5px 15px 0 #c9c6c6;
+  position: relative;
+}
+
+.card_new {
+  background-color: #99e2d0;
+  color: #1b6150;
+  position: absolute;
+  right: 0.7rem;
+  top: 1rem;
+  padding: 8px;
 }
 
 .card img {
   width: 100%;
-  border-radius: 25px;
   height: 180px;
   object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
 }
 
 /*Primaire*/

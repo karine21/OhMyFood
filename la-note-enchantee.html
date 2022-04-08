@@ -9,140 +9,149 @@
         <title>ohmyfood</title>
 </head>
 <body>
-    <header>
+    <header class="header-menu">
         <nav>
-            <div>
+            <div class="icone">
                 <a href="/index.html">
                     <i class="fas fa-arrow-left"></i>
-                </a>   
+                </a> 
             </div>      
-                   <h1>ohmyfood</h1>         
+            <h1>ohmyfood</h1>      
         </nav> 
-        <img src="./images/La-note-enchantée.jpg" alt="La note enchantée">
-        <div class="nom">
-            <div class="resto">
-                    <h2>Le délice des sens</h2>
-                    <div class="heart-btn">
-                        <i class="far fa-heart fa-lg"></i>
-                        <i class="fas fa-x2 fa-heart"></i>
-                    </div>
-            </div>      
-        </div>
     </header>
-    <main>
+    <main class="main-menu">
+        <img src="./images/La-note-enchantée.jpg" alt="La note enchantée">
         <section id="menu">
-            <h3>Entrées</h3>
-            <div class="cards_choix">
-                <div class="texte">
-                    <h4>Ravoiles de foie gras</h4>
-                    <p>Accompagnée de leur crème à la truffe</p>
-                </div>
-                <div class="clic_choix">
-                    <strong>25€</strong>
-                </div>
-            </div>
-
-            <div class="cards_choix">
-                <div class="texte">
-                    <h>Caviar osciètre</h4>
-                    <p>Sur blini à la farine de blè noir</p>
-                </div>
-                <div class="clic_choix">
-                    <strong>35€</strong> 
-                </div>
-                  
-            </div>
-            <div class="cards_choix">
-                <div class="texte">
-                    <h4>Homard et estumma de potiron</h4><!--dépassement-->
-                    <p>Mariné aux zestes d'orange</p>
-                </div>
-                <div class="clic_choix">
-                    <strong>20€</strong>
-                </div>
+            <div class="nom">
+                <div class="resto">
+                        <h2>La note enchantée</h2>
+                        <div class="heart-btn">
+                            <i class="far fa-heart fa-lg"></i>
+                            <i class="fas fa-x2 fa-heart"></i>
+                        </div>
+                </div>      
             </div>
             
-            <div class="cards_choix">
-                <div class="texte">
-                    <h4>Foie gras de canard cuit entier</h4>
-                    <p>Confiture et pain taosté</p>
+                
+                <div class="cards_choix">
+                    <h3>ENTRÉES</h3>
+                    <article class="choix_plat">
+                        <div class="texte">
+                            <h4>Ravoiles de foie gras</h4>
+                            <p>Accompagnée de leur crème à la truffe</p>
+                        </div>
+                        <div class="prix"><strong>25€</strong></div>
+                        <div class="clic_choix"><i class="fas fa-check-circle"></i></div> 
+                    </article>
                 </div>
-                <div class="clic_choix">
-                    <strong>35€</strong>
+    
+                <div class="cards_choix">
+                    <article class="choix_plat">
+                        <div class="texte">
+                            <h>Caviar osciètre</h4>
+                            <p>Sur blini à la farine de blè noir</p>
+                        </div>
+                        <div class="prix"><strong>35€</strong></div>
+                        <div class="clic_choix"><i class="fas fa-check-circle"></i></div> 
+                    </article>
                 </div>
-            </div>   
-            
-            <h3>Plats</h3>
-            <div class="cards_choix">
-                <div class="texte">
-                    <h4>Noix de coquilles Saint-Jacques</h4>
-                    <p>Sur lit de purée de céleri</p>
-                </div>
-                <div class="clic_choix">
-                    <strong>40€</strong>
-                </div>
-            </div>
 
-            <div class="cards_choix">
-                <div class="texte">
-                    <h4>Langoustine poêlée</h4>
-                    <p>Purée de patate douce</p>
-                </div>
-                <div class="clic_choix">
-                    <strong>35€</strong>
-                </div> 
-            </div>
-
-            <div class="cards_choix">
-                <div class="texte">
-                    <h4>Mijoté de queue de boeuf</h4>
-                    <p>Et riz sauvage aux zestz de citron</p>
-                </div>
-                <div class="clic_choix">
-                    <strong>44€</strong>
-                </div>  
-            </div>
-
-            <h3>Desserts</h3>
-            <div class="cards_choix">
-                <div class="texte">
-                    <h4>Paris-Brest</h4>
-                    <p>Revisité</p> 
-                </div>
-                <div class="clic_choix">
-                    <strong>18€</strong>
+                <div class="cards_choix">
+                    <article class="choix_plat">
+                        <div class="texte">
+                            <h4>Homard et estumma de potiron</h4><!--dépassement-->
+                            <p>Mariné aux zestes d'orange</p>
+                        </div>
+                        <div class="prix"><strong>20€</strong></div>
+                        <div class="clic_choix"><i class="fas fa-check-circle"></i></div> 
+                    </article>
                 </div>
                 
-            </div>
-            <div class="cards_choix">
-                <div class="texte">
-                    <h4>Macaron noisette et chocolat</h4>
-                    <p>Glace au caramel brun et sel de Guérande</p>
+                <div class="cards_choix">
+                    <article class="choix_plat">
+                        <div class="texte">
+                            <h4>Foie gras de canard cuit entier</h4>
+                            <p>Confiture et pain taosté</p>
+                        </div>
+                        <div class="prix"><strong>35€</strong></div>
+                        <div class="clic_choix"><i class="fas fa-check-circle"></i></div> 
+                    </article>
+                </div>   
+                
+                
+                <div class="cards_choix">
+                    <h3>Plats</h3>
+                    <article class="choix_plat">
+                        <div class="texte">
+                            <h4>Noix de coquilles Saint-Jacques</h4>
+                            <p>Sur lit de purée de céleri</p>
+                        </div>
+                        <div class="prix"><strong>40€</strong></div>
+                        <div class="clic_choix"><i class="fas fa-check-circle"></i></div> 
+                    </article>
                 </div>
-                <div class="clic_choix">
-                    <strong>18€</strong>
+    
+                <div class="cards_choix">
+                    <article class="choix_plat">
+                        <div class="texte">
+                            <h4>Langoustine poêlée</h4>
+                            <p>Purée de patate douce</p>
+                        </div>
+                        <div class="prix"><strong>35€</strong></div>
+                        <div class="clic_choix"><i class="fas fa-check-circle"></i></div> 
+                    </article>
+                </div>
+    
+                <div class="cards_choix">
+                    <article class="choix_plat">
+                        <div class="texte">
+                            <h4>Mijoté de queue de boeuf</h4>
+                            <p>Et riz sauvage aux zestz de citron</p>
+                        </div>
+                        <div class="prix"><strong>44€</strong></div>
+                        <div class="clic_choix"><i class="fas fa-check-circle"></i></div>
+                    </article>
+                </div>
+    
+                <div class="cards_choix">
+                    <h3>Desserts</h3>
+                <div class="cards_choix">
+                    <article class="choix_plat">
+                        <div class="texte">
+                            <h4>Macaron noisette et chocolat</h4>
+                            <p>Glace au caramel brun et sel de Guérande</p>
+                        </div>
+                        <div class="prix"><strong>18€</strong></div>
+                        <div class="clic_choix"><i class="fas fa-check-circle"></i></div>
+                    </article>
+                </div>
+    
+                <div class="cards_choix">
+                    <article class="choix_plat">
+                        <div class="texte">
+                            <h4>Baba au rhum revisité</h4>
+                            <p>Avec son coulis de citron</p>
+                        </div>
+                        <div class="prix"><strong>22€</strong></div>
+                        <div class="clic_choix"><i class="fas fa-check-circle"></i></div>
+                    </article>
                 </div> 
-            </div>
-
-            <div class="cards_choix">
-                <div class="texte">
-                    <h4>Baba au rhum revisité</h4>
-                    <p>Avec son coulis de citron</p>
+    
+                <div class="cards_choix">
+                    <article class="choix_plat">
+                        <div class="texte">
+                            <h4>Tarte au citron meringuée</h4>
+                            <p>Déstructurée</p>
+                        </div>
+                        <div class="prix"><strong>23€</strong></div>
+                        <div class="clic_choix"><i class="fas fa-check-circle"></i></div>
+                    </article>
                 </div>
-                <div class="clic_choix">
-                    <strong>22€</strong>
-                </div>
-            </div> 
 
-            <div class="cards_choix">
-                <h4>Tarte au citron meringuée</h4>
-                <p>Déstructurée</p>
-            </div>
-                <div class="clic_choix">
-                    <strong>23€</strong>
-            </div>
-            <a href="#restaurants" class="restaurants_btn">Commander</a>
+                <a href="#restaurants" class="restaurants_btn">Commander</a>
         </section>
+        
+       
         
        
     </main>
