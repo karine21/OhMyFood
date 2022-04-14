@@ -1,0 +1,86 @@
+/*index*/
+.loader {
+    background-color: lightgray;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    /*animation:back-up 5s ease-out;*/
+    animation: back-up 1s 3s forwards;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    opacity: 0.9;
+    transform-origin: top;
+    place-items: center;
+    &::after {
+        content: "" ;
+        animation-name: spinner 4s  infinite ease-in-out;
+        width:30px;
+        height:30px;
+        border-radius:50%;
+    } 
+}
+@keyframes back-up {
+    to {
+        transform: scale(0);  
+    }   
+}
+@keyframes spinner {
+    to { 
+        transform: rotate(360deg) 
+    }
+}
+/*fonctionnement*/
+.genre li:hover {
+    background-color:#f3ecfb;
+    box-shadow:2px 1px 8px -3px rgb(106, 105, 105); 
+    transform: scale(1.1);  
+}
+/*survol icone fonctionnement*/
+.genre-fas:hover {
+    color: rgb(147,86,220);
+}
+/*animation vers le haut menu*/
+.cards_choix {
+    animation:back 5s ease-out;
+    z-index: 1;
+  }
+  @keyframes back {
+    
+    to {
+        opacity:1;
+        transform: translateY(-33%);
+    }  
+}
+/*animation rotation et choix*/
+  .clic_choix {
+    width: 50px;
+    border-radius: 0 1rem 1rem 0;
+    text-align: center;
+    color: #FFF;
+    margin: -1rem -5rem -1rem -2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+/*menu*/
+.clic_choix:hover {
+    animation:transition 0.3s;
+    transition: all 0.3s ease-in-out;
+    background-color:#99E2D0;
+    opacity: 1;
+  }
+.clic_choix i {
+    animation: rotate 1s ease forwards;
+    @keyframes rotate {
+        to {
+                  transform: translateX(0) rotate(360deg);
+                  opacity: 1;
+                  visibility: visible;
+        }
+      }
+}
+  
