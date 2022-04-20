@@ -12,11 +12,12 @@ footer {
     font-family: Shrikhand,"cursive";
     font-size: 1.3rem;
     margin-top:20px;  
+    color:rgb(255,255,255) ;
 }
 /*icone*/
-.gray {
+.fa-utensils,.fa-hands-helping {
     color: rgb(255,255,255);
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
   .footer_container a {
     text-decoration: none;
@@ -24,13 +25,8 @@ footer {
   footer ul {
     padding-left: 5px;
   }
-  footer p {
-    text-decoration: none;
-    color: rgb(255,255,255);
-    font-size: 18px;
-}
 /*footer sans icone*/
 footer p {
-    color: white;
+    color:rgb(255,255,255) ;
     font-size: 16px;
 }

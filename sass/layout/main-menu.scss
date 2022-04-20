@@ -26,6 +26,10 @@ h2 {
   }
 
 /*choix de carte*/
+.bloc-menu {
+  flex-direction: column;
+  justify-content: center;
+}
 .menu {
     background-color: #f6f6f6;
     flex-direction: column;
@@ -39,6 +43,7 @@ h2 {
   }
   .cards_choix {
     margin: 0;
+    width: 32%;
   }
   .cards_choix h3  {
     text-transform: uppercase;
@@ -72,15 +77,15 @@ h2 {
   .choix_plat {
     display: flex;
     margin: 0 0px 15px 5px;
-    width: 300px;
+    width: 315px;
     overflow: hidden;
     background-color: #FFF;
     border-radius: 15px;
     box-shadow:1px 5px 11px -2px #a19f9f; ;
     cursor: pointer;
     padding-left: 0.5rem;
-    
   } 
+ 
 
   
   

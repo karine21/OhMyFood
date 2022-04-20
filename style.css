@@ -101,6 +101,20 @@
   padding: 0;
 }
 
+/*flèche menu*/
+.fa-arrow-left:hover {
+  color: black;
+}
+
+/*icone footer*/
+.fa-hands-helping:hover {
+  color: white;
+}
+
+.fa-utensils:hover {
+  color: white;
+}
+
 /*footer*/
 footer {
   background-color: #353535;
@@ -117,12 +131,13 @@ footer {
   font-family: Shrikhand, "cursive";
   font-size: 1.3rem;
   margin-top: 20px;
+  color: white;
 }
 
 /*icone*/
-.gray {
+.fa-utensils, .fa-hands-helping {
   color: white;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
 }
 
 .footer_container a {
@@ -131,12 +146,6 @@ footer {
 
 footer ul {
   padding-left: 5px;
-}
-
-footer p {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
 }
 
 /*footer sans icone*/
@@ -160,13 +169,13 @@ footer p {
   font-size: 1.2em;
 }
 
-/*flèche*/
+/*flèche menu*/
 a {
   text-decoration: none;
   color: #000;
 }
 
-.icone {
+.icone-menu {
   padding: 15px 25px 0px 20px;
 }
 
@@ -221,6 +230,11 @@ h2 {
 }
 
 /*choix de carte*/
+.bloc-menu {
+  flex-direction: column;
+  justify-content: center;
+}
+
 .menu {
   background-color: #f6f6f6;
   flex-direction: column;
@@ -235,6 +249,7 @@ h2 {
 
 .cards_choix {
   margin: 0;
+  width: 32%;
 }
 
 .cards_choix h3 {
@@ -274,7 +289,7 @@ h4 {
 .choix_plat {
   display: flex;
   margin: 0 0px 15px 5px;
-  width: 300px;
+  width: 315px;
   overflow: hidden;
   background-color: #FFF;
   border-radius: 15px;
@@ -291,6 +306,79 @@ body {
   width: 100%;
 }
 
+.loader {
+  background-color: lightgray;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  animation: back-up 5s ease-out;
+  animation: back-up 1s 3s forwards;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  opacity: 0.9;
+  transform-origin: top;
+  place-items: center;
+}
+
+@keyframes back-up {
+  to {
+    transform: scale(0);
+  }
+}
+/*bouteille et texte*/
+.spinner {
+  width: 40px;
+  height: 80px;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #FFF;
+  box-sizing: border-box;
+  color: #7c2f2f;
+  border-radius: 20px 20px 4px 4px;
+  background: #fff;
+  animation: full 4s linear infinite alternate;
+  right: 220px;
+  font-family: "Shrikhand";
+  font-size: 14px;
+  text-align: center;
+}
+
+.spinner::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -95%);
+  border: 2px solid #FFF;
+  border-bottom: none;
+  background: #fff;
+  width: 15px;
+  height: 35px;
+  animation: fullcollar 4s linear infinite alternate;
+  /*col plein*/
+}
+
+/*plein*/
+@keyframes full {
+  0% {
+    box-shadow: 0 0 inset;
+  }
+  50%, 100% {
+    box-shadow: 0 -98px inset;
+  }
+}
+/*plein*/
+@keyframes fullcollar {
+  0%, 50% {
+    box-shadow: 0 0 inset;
+  }
+  100% {
+    box-shadow: 0 -20px inset;
+  }
+}
 section {
   background-color: #f6f6f6;
   flex-direction: column;
@@ -425,45 +513,6 @@ figcaption p {
   border-radius: 15px 15px 0px 0px;
 }
 
-/*responsive desktop first*/
-@media all and (min-width: 993px) and (max-width: 1280px) {
-  body {
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: "Roboto";
-    margin: 0;
-    width: 100%;
-    width: 100%;
-    margin: 0;
-  }
-
-  ol {
-    display: flex;
-    flex-wrap: wrap;
-    width: 85%;
-    margin: 1rem;
-  }
-
-  .container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: wrap;
-    align-items: center;
-    margin-bottom: 45px;
-  }
-
-  .footer_container {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .logo_footer {
-    font-family: Shrikhand, "cursive";
-    font-size: 1.3rem;
-    margin-top: 20px;
-  }
-}
 /*Primaire*/
 /*box shadox header,btn*/
 /*form*/
