@@ -139,9 +139,9 @@
         visibility:visible;
     }
 } 
-@keyframes slide {
+@keyframes clic_choix {
   to {
-    
+    transform:translate(0);
     opacity:1;
   }
 }
