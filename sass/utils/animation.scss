@@ -64,6 +64,79 @@
   100% { 
     box-shadow: 0 -20px inset }
 }
+.loader {
+  background-color: lightgray;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  animation: back-up 5s ease-out;
+  animation: back-up 1s 3s forwards;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  opacity: 0.9;
+  transform-origin: top;
+  place-items: center;
+}
+
+@keyframes back-up {
+  to {
+    transform: scale(0);
+  }
+}
+/*bouteille et texte*/
+.spinner {
+  width: 40px;
+  height: 80px;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #FFF;
+  box-sizing: border-box;
+  color: #7c2f2f;
+  border-radius: 20px 20px 4px 4px;
+  background: #fff;
+  animation: full 4s linear infinite alternate;
+  right: 220px;
+  font-family: "Shrikhand";
+  font-size: 14px;
+  text-align: center;
+}
+
+.spinner::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -95%);
+  border: 2px solid #FFF;
+  border-bottom: none;
+  background: #fff;
+  width: 15px;
+  height: 35px;
+  animation: fullcollar 4s linear infinite alternate;
+  /*col plein*/
+}
+
+/*plein*/
+@keyframes full {
+  0% {
+    box-shadow: 0 0 inset;
+  }
+  50%, 100% {
+    box-shadow: 0 -98px inset;
+  }
+}
+/*plein*/
+@keyframes fullcollar {
+  0%, 50% {
+    box-shadow: 0 0 inset;
+  }
+  100% {
+    box-shadow: 0 -20px inset;
+  }
+}
 /*fonctionnement*/
 .genre li:hover {
     background-color:#f3ecfb;
@@ -74,9 +147,13 @@
 .genre-fas:hover {
     color: rgb(147,86,220);
 }
+/*flèche menu*/
+.fa-arrow-left:hover {
+  color: black;
+}
 /*animation vers le haut menu*/
-.cards_choix {
-    animation:back 4s ease-out;
+.choix_plat {
+    animation:back 2s ease-out;
     z-index: 1;
   }
   @keyframes back {
@@ -85,7 +162,7 @@
         transform: translateY(-33%);
     }  
 }
-.texte   {
+.texte  {
     margin-top: 10px;
     margin-bottom: -8px;
     overflow: hidden;
@@ -95,7 +172,7 @@
 }
 /*animation rotation et choix menu*/
   .clic_choix {
-    width: 56px;
+    width: 60px;
     border-radius: 0 1rem 1rem 0;
     text-align: center;
     color: #FFF;
@@ -104,6 +181,7 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease-in-out; 
+    transform: translateX(10px);
 }
 .choix_plat {
   display: flex;
@@ -122,11 +200,11 @@
     transition: all 0.3s ease-in-out;
     background-color:#99E2D0;
     opacity: 1; 
+    animation:clic_choix 1s forwards;
   }
   .clic_choix i:hover {
     color:white;
-    animation: rotate 1s ease forwards;
-    transform:translate(0);
+    animation: rotate 1s ease forwards;  
   }
 .clic_choix i {
     padding: 0;
@@ -134,7 +212,6 @@
 @keyframes rotate {
     to {
         transform: translate(0) rotate(360deg);
-        
         opacity: 1;
         visibility:visible;
     }
@@ -143,6 +220,177 @@
   to {
     transform:translate(0);
     opacity:1;
+  }
+}
+/*Primaire*/
+/*box shadox header,btn*/
+/*form*/
+/*surlignement menu,clic*/
+/*section*/
+/*icone*/
+/*li*/
+/*li*/
+/*card*/
+/*number*/
+/*genre i*/
+/*box shadox*/
+/*text new*/
+/*box shadow card*/
+/*footer*/
+/*Secondaire*/
+/*btn,heart*/
+/*Tertiaire*/
+/*new*/
+/*général*/
+/*index*/
+.loader {
+  background-color: lightgray;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  animation: back-up 5s ease-out;
+  animation: back-up 1s 3s forwards;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  opacity: 0.9;
+  transform-origin: top;
+  place-items: center;
+}
+
+@keyframes back-up {
+  to {
+    transform: scale(0);
+  }
+}
+/*bouteille et texte*/
+.spinner {
+  width: 40px;
+  height: 80px;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #FFF;
+  box-sizing: border-box;
+  color: #7c2f2f;
+  border-radius: 20px 20px 4px 4px;
+  background: #fff;
+  animation: full 4s linear infinite alternate;
+  right: 220px;
+  font-family: "Shrikhand";
+  font-size: 14px;
+  text-align: center;
+}
+
+.spinner::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -95%);
+  border: 2px solid #FFF;
+  border-bottom: none;
+  background: #fff;
+  width: 15px;
+  height: 35px;
+  animation: fullcollar 4s linear infinite alternate;
+  /*col plein*/
+}
+
+/*plein*/
+@keyframes full {
+  0% {
+    box-shadow: 0 0 inset;
+  }
+  50%, 100% {
+    box-shadow: 0 -98px inset;
+  }
+}
+/*plein*/
+@keyframes fullcollar {
+  0%, 50% {
+    box-shadow: 0 0 inset;
+  }
+  100% {
+    box-shadow: 0 -20px inset;
+  }
+}
+/*fonctionnement*/
+.genre li:hover {
+  background-color: #f3ecfb;
+  box-shadow: 2px 1px 8px -3px #6a6969;
+  transform: scale(1.1);
+}
+
+/*survol icone fonctionnement*/
+.genre-fas:hover {
+  color: #9356dc;
+}
+
+/*animation vers le haut menu*/
+.choix_plat {
+  animation: back 2s ease-out;
+  z-index: 1;
+}
+
+@keyframes back {
+  to {
+    opacity: 1;
+    transform: translateY(-33%);
+  }
+}
+.texte {
+  margin-top: 10px;
+  margin-bottom: -8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 226px;
+}
+
+/*animation rotation et choix menu*/
+.clic_choix {
+  width: 60px;
+  border-radius: 0 1rem 1rem 0;
+  text-align: center;
+  color: #FFF;
+  margin: -1rem -5rem -1rem -2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(10px);
+}
+/*menu*/
+.clic_choix:hover {
+  animation: transition 0.3s;
+  transition: all 0.3s ease-in-out;
+  background-color: #99E2D0;
+  opacity: 1;
+  animation: clic_choix 1s forwards;
+}
+
+.clic_choix i:hover {
+  color: white;
+  animation: rotate 1s ease forwards;
+}
+
+.clic_choix i {
+  padding: 0;
+}
+
+@keyframes rotate {
+  to {
+    transform: translate(0) rotate(360deg);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes clic_choix {
+  to {
+    transform: translate(0);
+    opacity: 1;
   }
 }
 

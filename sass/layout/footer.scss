@@ -33,4 +33,55 @@ footer p {
 footer ul {
   list-style-type: none;
 } 
+/*icone footer*/
+.fa-hands-helping:hover {
+  color: white;
+}
+
+.fa-utensils:hover {
+  color: white;
+}
+
+/*footer*/
+footer {
+  background-color: #353535;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/*logo*/
+.logo_footer {
+  font-family: Shrikhand, "cursive";
+  font-size: 1.3rem;
+  margin-top: 20px;
+  color: white;
+}
+
+/*icone*/
+.fa-utensils, .fa-hands-helping {
+  color: white;
+  padding-right: 0.5rem;
+}
+
+.footer_container a {
+  text-decoration: none;
+}
+
+footer ul {
+  padding-left: 5px;
+}
+
+/*footer sans icone*/
+footer p {
+  color: white;
+  font-size: 16px;
+}
+
+footer ul {
+  list-style-type: none;
+}
   
