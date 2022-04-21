@@ -13,13 +13,6 @@
     opacity: 0.9;
     transform-origin: top;
     place-items: center;
-    /*&::after {
-        content: "" ;
-        animation-name: spinner 4s  infinite ease-in-out;
-        width:30px;
-        height:30px;
-        border-radius:50%;
-    } */
 }
 @keyframes back-up {
     to {
@@ -57,7 +50,6 @@
   height: 35px;
   animation: fullcollar 4s linear infinite alternate;/*col plein*/
 }
-
 /*plein*/
 @keyframes full {
   0% { 
@@ -72,9 +64,6 @@
   100% { 
     box-shadow: 0 -20px inset }
 }
-
-/*rotation bouteille 90deg à faire,couleur texte*/
-
 /*fonctionnement*/
 .genre li:hover {
     background-color:#f3ecfb;
@@ -87,7 +76,7 @@
 }
 /*animation vers le haut menu*/
 .cards_choix {
-    animation:back 5s ease-out;
+    animation:back 4s ease-out;
     z-index: 1;
   }
   @keyframes back {
@@ -96,16 +85,15 @@
         transform: translateY(-33%);
     }  
 }
-.texte .note  {
+.texte   {
     margin-top: 10px;
     margin-bottom: -8px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 190px;
+    width: 226px;
 }
-
-/*animation rotation et choix*/
+/*animation rotation et choix menu*/
   .clic_choix {
     width: 56px;
     border-radius: 0 1rem 1rem 0;
@@ -115,9 +103,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease-in-out;
-    
+    transition: transform 0.3s ease-in-out; 
 }
+.choix_plat {
+  display: flex;
+  margin: 0 0px 15px 5px;
+  width: 300px;
+  overflow: hidden;
+  background-color: #FFF;
+  border-radius: 15px;
+  box-shadow:1px 5px 11px -2px #a19f9f; ;
+  cursor: pointer;
+  padding-left: 0.5rem;
+} 
 /*menu*/
 .clic_choix:hover {
     animation:transition 0.3s;
@@ -128,6 +126,7 @@
   .clic_choix i:hover {
     color:white;
     animation: rotate 1s ease forwards;
+    transform:translate(0);
   }
 .clic_choix i {
     padding: 0;
@@ -135,10 +134,18 @@
 @keyframes rotate {
     to {
         transform: translate(0) rotate(360deg);
+        
         opacity: 1;
         visibility:visible;
     }
-}    
+} 
+@keyframes slide {
+  to {
+    
+    opacity:1;
+  }
+}
+
 
 
       

@@ -24,7 +24,6 @@ h2 {
     display: flex;
     justify-content: space-between;
   }
-
 /*choix de carte*/
 .bloc-menu {
   flex-direction: column;
@@ -58,10 +57,6 @@ h2 {
     margin-bottom: -8px;
   }
 /*déscription des choix (entrées,plats,desserts)*/
-.texte {
-  width: 235px;
-  padding-left: 5px;
-  }
   .choix_plat p {
     text-align: inherit;
     font-size: 0.9em;
@@ -74,17 +69,7 @@ h2 {
     display: flex;
     align-items: flex-end;
   }
-  .choix_plat {
-    display: flex;
-    margin: 0 0px 15px 5px;
-    width: 315px;
-    overflow: hidden;
-    background-color: #FFF;
-    border-radius: 15px;
-    box-shadow:1px 5px 11px -2px #a19f9f; ;
-    cursor: pointer;
-    padding-left: 0.5rem;
-  } 
+  
  
 
   
