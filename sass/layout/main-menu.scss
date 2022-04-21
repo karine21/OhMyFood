@@ -1,74 +1,74 @@
 body {
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: "Roboto";
-    margin: 0;
-    width: 100%;
-  } 
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Roboto";
+  margin: 0;
+  width: 100%;
+} 
 .main-menu img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-  }
-  /*nom resto ex:la palette*/
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+/*nom resto ex:la palette*/
 .nom {
-    display: flex;
-    flex-direction: column;
-    }
+  display: flex;
+  flex-direction: column;
+}
 h2 {
-    font-family:Shrikhand;
-    font-size: 1.5em;
-    margin-left: 7px;
-  }
+  font-family:Shrikhand;
+  font-size: 1.5em;
+  margin-left: 7px;
+}
 .resto {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+}
 /*choix de carte*/
 .bloc-menu {
   flex-direction: column;
   justify-content: center;
 }
 .menu {
-    background-color: #f6f6f6;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    padding-left:1rem; 
-    border-radius: 2rem 2rem 0 0;
-    z-index: 1;
-    margin-top: -2rem;
-    position: relative;
-  }
-  .cards_choix {
-    margin: 0;
-    width: 32%;
-  }
-  .cards_choix h3  {
-    text-transform: uppercase;
-    border-bottom: 3px solid #99E2D0;
-    width: 45px;
-    margin-left: 5px;
-    font-weight: lighter;
-    color:#5C5C5C ;
-  }
-  h4 {
-    margin-top: 10px;
-    margin-bottom: -8px;
-  }
+  background-color: #f6f6f6;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding-left:1rem; 
+  border-radius: 2rem 2rem 0 0;
+  z-index: 1;
+  margin-top: -2rem;
+  position: relative;
+}
+.cards_choix {
+  margin: 0;
+  width: 32%;
+}
+.cards_choix h3  {
+  text-transform: uppercase;
+  border-bottom: 3px solid #99E2D0;
+  width: 45px;
+  margin-left: 5px;
+  font-weight: lighter;
+  color:#5C5C5C ;
+}
+h4 {
+  margin-top: 10px;
+  margin-bottom: -8px;
+}
 /*déscription des choix (entrées,plats,desserts)*/
-  .choix_plat p {
-    text-align: inherit;
-    font-size: 0.9em;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .prix {
-    padding: 12px;
-    display: flex;
-    align-items: flex-end;
-  }
+.choix_plat p {
+  text-align: inherit;
+  font-size: 0.9em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.prix {
+  padding: 12px;
+  display: flex;
+  align-items: flex-end;
+}
   
  
 
