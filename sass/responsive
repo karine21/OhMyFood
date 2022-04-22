@@ -1,4 +1,4 @@
-  /*tablette*/
+/*tablette main-index*/
 @media all and (min-width: 767px) and (max-width:992px){
   body {
       box-sizing: border-box;
@@ -147,7 +147,6 @@
       color: white;
       padding-right: 0.5rem;
   }
-  
   .footer_container a {
       text-decoration: none;
   }
@@ -160,4 +159,4 @@
       list-style-type: none;
       padding-left: 5px;
   }
-}
+}  
