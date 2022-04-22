@@ -76,21 +76,20 @@ h4 {
     font-family: "Roboto";
     margin: 0;
     width: 100%;
-}
-.header-menu {
+  }
+  .header-menu {
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-.bloc-menu {
+  }
+  .bloc-menu {
   justify-content: center;
   display: flex;
   flex-direction: row;
-}
-
-.restaurants-btn {
+  }
+  .restaurants-btn {
   margin: 3rem 26rem;
-}
+  }
 }
 @media all and (min-width:1301px){
   body {
@@ -110,7 +109,12 @@ h4 {
   display: flex;
   flex-direction: row;
 }
-
+.prix {
+  padding: 12px;
+  display: flex;
+  align-items: flex-end;
+  padding: 12px 30px;
+}
 .restaurants-btn {
   margin: 3rem 33rem;
 }
