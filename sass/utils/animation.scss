@@ -78,6 +78,10 @@
 .fa-arrow-left:hover {
   color: black;
 }
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 /*animation vers le haut menu*/
 .choix_plat {
   animation:back 2s ease-out;
@@ -107,8 +111,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease-in-out; 
-  transform: translateX(10px);
+  
 }
 .choix_plat {
   display: flex;
@@ -120,17 +123,8 @@
   box-shadow:1px 5px 11px -2px #a19f9f; ;
   cursor: pointer;
   padding-left: 0.5rem;
+  
 } 
-/*fonctionnement*/
-.genre li:hover {
-  background-color: #f3ecfb;
-  box-shadow: 2px 1px 8px -3px #6a6969;
-  transform: scale(1.1);
-}
-/*survol icone fonctionnement*/
-.genre-fas:hover {
-  color: #9356dc;
-}
 /*menu*/
 .clic_choix:hover {
   animation: transition 0.3s;
@@ -138,6 +132,8 @@
   background-color: #99E2D0;
   opacity: 1;
   animation: clic_choix 1s forwards;
+  transition: transform 0.3s ease-in-out; 
+  transform: translateX(10px);
 }
 .clic_choix i:hover {
   color: white;
@@ -159,6 +155,8 @@
     opacity: 1;
   }
 }
+
+
 
 
 
