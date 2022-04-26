@@ -93,37 +93,27 @@
         transform: translateY(-33%);
     }  
 }
-.texte  {
-  margin-top: 10px;
-  margin-bottom: -8px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 234px;
-}
 /*animation rotation et choix menu*/
 .clic_choix {
-  width: 52px;
+  width: 60px;
   border-radius: 0 1rem 1rem 0;
   text-align: center;
   color: #FFF;
   margin: -1rem -5rem -1rem -2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center; 
 }
 .choix_plat {
   display: flex;
   margin: 0 0px 15px 5px;
-  width: 290px;
+  width: 292px;
   overflow: hidden;
   background-color: #FFF;
   border-radius: 15px;
   box-shadow:1px 5px 11px -2px #a19f9f; ;
   cursor: pointer;
   padding-left: 0.5rem;
-  
 } 
 /*menu*/
 .clic_choix:hover {

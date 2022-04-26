@@ -57,6 +57,14 @@ h4 {
   margin-bottom: -8px;
 }
 /*déscription des choix (entrées,plats,desserts)*/
+.texte  {
+  margin-top: 10px;
+  margin-bottom: -8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 234px;
+}
 .choix_plat p {
   text-align: inherit;
   font-size: 0.9em;
@@ -100,7 +108,7 @@ h4 {
 } 
   .cards_choix {
   margin: 0;
-  width: 41%;
+  width: 45%;
 }
 }
 
@@ -123,7 +131,7 @@ h4 {
   flex-direction: row;
   }
 }
-@media all and (min-width:1301px){
+@media screen and (min-width:1301px){
   body {
     box-sizing: border-box;
     font-size: 16px;
@@ -144,7 +152,7 @@ h4 {
 .choix_plat {
   display: flex;
   margin: 0 0px 15px 5px;
-  width: 320px;
+  min-width: 325px;
   overflow: hidden;
   background-color: #FFF;
   border-radius: 15px;
@@ -152,6 +160,16 @@ h4 {
   cursor: pointer;
   padding-left: 0.5rem;
 }
+.clic_choix {
+  width: 60px;
+  border-radius: 0 1rem 1rem 0;
+  text-align: center;
+  color: #FFF;
+  margin: -1rem -5rem -1rem -2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
 .prix {
   display: flex;
   align-items: flex-end;
