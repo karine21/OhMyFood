@@ -42,7 +42,7 @@ h2 {
 }
 .cards_choix {
   margin: 0;
-  width: 32%;
+  width: 95%;
 }
 .cards_choix h3  {
   text-transform: uppercase;
@@ -110,6 +110,9 @@ h4 {
   margin: 0;
   width: 45%;
 }
+.restaurants-btn {
+  margin-left: 17rem;
+}
 }
 
 @media all and (min-width: 993px) and (max-width:1300px){
@@ -129,6 +132,9 @@ h4 {
   justify-content: center;
   display: flex;
   flex-direction: row;
+  }
+  .restaurants-btn {
+    margin-left: 17rem;
   }
 }
 @media screen and (min-width:1301px){
@@ -174,6 +180,9 @@ h4 {
   display: flex;
   align-items: flex-end;
   padding: 10px 22px;
+}
+.restaurants-btn {
+  margin-left: 17rem;
 }
 }
 

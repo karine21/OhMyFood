@@ -19,6 +19,14 @@ form {
     background-color: rgb(234 234 234 );
     height: 50px;
 }
+form i {
+    margin-right: 1.5rem;
+}
+input {
+    font-size: 14px;
+    background-color: rgb(234,234,234);
+    border: none;
+}
 h1 {
     text-align: center;
     margin-top: 30px;
@@ -26,11 +34,12 @@ h1 {
 section p {
     text-align: center;
 }
+
 /*fonctionnement*/
 ol {
     display: flex;
     flex-wrap: wrap;
-    width: 85%;
+    width: 80%;
 }
 #genre li {
     align-items: center;
@@ -44,6 +53,7 @@ ol {
     font-weight: bold;
     position: relative;  
     display: flex;
+    margin-right: 1rem;
 }
 .number {
     color: rgb(147,86,220);

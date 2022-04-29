@@ -72,14 +72,17 @@
 }
 /*survol icone fonctionnement*/
 .genre-fas:hover {
-    color: rgb(147,86,220);
+  color: rgb(147,86,220);
+}
+.genre ol:hover {
+  color: rgb(147,86,220);
 }
 /*flèche menu*/
 .fa-arrow-left:hover {
   color: black;
 }
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
   cursor: pointer;
 }
 /*animation vers le haut menu*/
@@ -102,7 +105,7 @@
   margin: -1rem -5rem -1rem -2rem;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 .choix_plat {
   display: flex;
