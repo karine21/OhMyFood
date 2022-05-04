@@ -22,14 +22,17 @@ form {
   background-color: #eaeaea;
   height: 50px;
 }
+
 form i {
   margin-right: 1.5rem;
 }
+
 input {
   font-size: 14px;
-  background-color: rgb(234,234,234);
+  background-color: #eaeaea;
   border: none;
 }
+
 h1 {
   text-align: center;
   margin-top: 30px;
@@ -487,11 +490,6 @@ h2 {
   position: relative;
 }
 
-.cards_choix {
-  margin: 0;
-  width: 32%;
-}
-
 .cards_choix h3 {
   text-transform: uppercase;
   border-bottom: 3px solid #99E2D0;
@@ -563,12 +561,7 @@ h4 {
     flex-wrap: wrap;
   }
 
-  .cards_choix {
-    margin: 0;
-    width: 45%;
-  }
-
-  .restaurants-btn {
+  .menu .restaurants-btn {
     margin-left: 17rem;
   }
 }
@@ -593,8 +586,8 @@ h4 {
     flex-direction: row;
   }
 
-  .restaurants-btn {
-    margin-left: 17rem;
+  .menu .restaurants-btn {
+    margin-left: 25rem;
   }
 }
 @media screen and (min-width: 1301px) {
@@ -628,6 +621,7 @@ h4 {
     box-shadow: 1px 5px 11px -2px #a19f9f;
     cursor: pointer;
     padding-left: 0.5rem;
+    transition: all 1s;
   }
 
   .clic_choix {
@@ -647,8 +641,8 @@ h4 {
     padding: 10px 22px;
   }
 
-  .restaurants-btn {
-    margin-left: 17rem;
+  .menu .restaurants-btn {
+    margin-left: 35rem;
   }
 }
 /*page principale*/
@@ -936,7 +930,7 @@ a {
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
   cursor: pointer;
 }
 
@@ -967,13 +961,14 @@ a {
 .choix_plat {
   display: flex;
   margin: 0 0px 15px 5px;
-  width: 292px;
+  width: 90%;
   overflow: hidden;
   background-color: #FFF;
   border-radius: 15px;
   box-shadow: 1px 5px 11px -2px #a19f9f;
   cursor: pointer;
   padding-left: 0.5rem;
+  transition: all 1s;
 }
 
 /*menu*/
@@ -985,6 +980,7 @@ a {
   animation: clic_choix 1s forwards;
   transition: transform 0.3s ease-in-out;
   transform: translate(10px);
+  margin: 0;
 }
 
 .clic_choix i:hover {
