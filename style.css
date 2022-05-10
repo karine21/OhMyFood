@@ -8,7 +8,7 @@ body {
 }
 
 section {
-  background-color: #f6f6f6;
+  background-color: rgb(246, 246, 246);
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: #eaeaea;
+  background-color: rgb(234, 234, 234);
   height: 50px;
 }
 
@@ -29,7 +29,7 @@ form i {
 
 input {
   font-size: 14px;
-  background-color: #eaeaea;
+  background-color: rgb(234, 234, 234);
   border: none;
 }
 
@@ -55,7 +55,7 @@ ol {
   flex-grow: 1;
   padding: 0.5rem 0.5rem;
   border-radius: 1.2rem;
-  box-shadow: 2px 1px 8px -3px #a19f9f;
+  box-shadow: 2px 1px 8px -3px rgb(161, 159, 159);
   margin-bottom: 1.5rem;
   list-style: none;
   font-weight: bold;
@@ -65,9 +65,9 @@ ol {
 }
 
 .number {
-  color: #9356dc;
+  color: rgb(147, 86, 220);
   border-radius: 50%;
-  background-color: #9356dc;
+  background-color: rgb(147, 86, 220);
   width: 22px;
   height: 20px;
   display: flex;
@@ -85,7 +85,7 @@ ol {
 
 /*icone fonctionnement*/
 .genre i {
-  color: #7e7e7e;
+  color: rgb(126, 126, 126);
   margin: 0 20px 0 20px;
 }
 
@@ -94,7 +94,7 @@ ol {
   display: flex;
   width: 100%;
   flex-direction: column;
-  background-color: #f6f6f6;
+  background-color: rgb(246, 246, 246);
   margin: auto;
 }
 
@@ -131,13 +131,13 @@ figcaption p {
   width: 95%;
   margin: 8px;
   border-radius: 15px;
-  background-color: white;
-  box-shadow: 0 5px 15px 0 #c9c6c6;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 15px 0 rgb(201, 198, 198);
   position: relative;
 }
 
 .card_new {
-  background-color: #99e2d0;
+  background-color: rgb(153, 226, 208);
   color: #1b6150;
   position: absolute;
   right: 0.7rem;
@@ -559,6 +559,11 @@ h4 {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .cards_choix {
+    width: 45%;
   }
 
   .menu .restaurants-btn {
@@ -586,6 +591,10 @@ h4 {
     flex-direction: row;
   }
 
+  .cards_choix {
+    width: 33%;
+  }
+
   .menu .restaurants-btn {
     margin-left: 25rem;
   }
@@ -611,34 +620,8 @@ h4 {
     flex-direction: row;
   }
 
-  .choix_plat {
-    display: flex;
-    margin: 0 0px 15px 5px;
-    min-width: 325px;
-    overflow: hidden;
-    background-color: #FFF;
-    border-radius: 15px;
-    box-shadow: 1px 5px 11px -2px #a19f9f;
-    cursor: pointer;
-    padding-left: 0.5rem;
-    transition: all 1s;
-  }
-
-  .clic_choix {
-    width: 60px;
-    border-radius: 0 1rem 1rem 0;
-    text-align: center;
-    color: #FFF;
-    margin: -1rem -5rem -1rem -2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .prix {
-    display: flex;
-    align-items: flex-end;
-    padding: 10px 22px;
+  .cards_choix {
+    width: 26%;
   }
 
   .menu .restaurants-btn {
@@ -827,11 +810,11 @@ a {
 
 /*icone footer*/
 .fa-hands-helping:hover {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .fa-utensils:hover {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /*index*/
@@ -911,17 +894,17 @@ a {
 /*fonctionnement*/
 .genre li:hover {
   background-color: #f3ecfb;
-  box-shadow: 2px 1px 8px -3px #6a6969;
+  box-shadow: 2px 1px 8px -3px rgb(106, 105, 105);
   transform: scale(1.1);
 }
 
 /*survol icone fonctionnement*/
 .genre-fas:hover {
-  color: #9356dc;
+  color: rgb(147, 86, 220);
 }
 
 .genre ol:hover {
-  color: #9356dc;
+  color: rgb(147, 86, 220);
 }
 
 /*flèche menu*/
@@ -1007,7 +990,7 @@ a {
 }
 /*footer*/
 footer {
-  background-color: #353535;
+  background-color: rgb(53, 53, 53);
 }
 
 .footer_container {
@@ -1021,12 +1004,12 @@ footer {
   font-family: Shrikhand, "cursive";
   font-size: 1.3rem;
   margin-top: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /*icone*/
 .fa-utensils, .fa-hands-helping {
-  color: white;
+  color: rgb(255, 255, 255);
   padding-right: 0.5rem;
 }
 
@@ -1040,7 +1023,7 @@ footer ul {
 
 /*footer sans icone*/
 footer p {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 16px;
 }
 
