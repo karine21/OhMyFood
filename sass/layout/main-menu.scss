@@ -59,7 +59,7 @@ h4 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 234px;
+  width: 180px;
 }
 .choix_plat p {
   text-align: inherit;
@@ -72,6 +72,59 @@ h4 {
   padding: 5px;
   display: flex;
   align-items: flex-end;
+}
+@media all and (min-width: 600px) and (max-width:766px){
+  body {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Roboto";
+    margin: 0;
+    width: 100%;
+  }
+  .header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .bloc-menu {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .choix_plat {
+    display: flex;
+    margin: 0 0px 15px 5px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: 1px 5px 11px -2px #a19f9f;
+    cursor: pointer;
+    transition: all 1s;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+}
+.prix {
+  padding: 5px;
+  display: flex;
+  align-items: flex-end;
+  padding-right: 2rem;
+}
+  .texte {
+    margin-top: 10px;
+    margin-bottom: -8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 217px;
+}
+  .cards_choix {
+    width: 60%;
+  }
+  .menu .restaurants-btn {
+    margin-left: 12rem;
+  }
 }
 @media all and (min-width: 767px) and (max-width:992px){
   body {
@@ -103,6 +156,20 @@ h4 {
   flex-wrap: wrap;
   width: 90%;
 } 
+.texte {
+  margin-top: 10px;
+  margin-bottom: -8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+.prix {
+  padding: 5px;
+  display: flex;
+  align-items: flex-end;
+  padding-right: 3rem;
+}
 .cards_choix {
   width: 45%;
 }
@@ -129,6 +196,14 @@ h4 {
   display: flex;
   flex-direction: row;
   }
+  .texte {
+  margin-top: 10px;
+  margin-bottom: -8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 200px;
+}
   .cards_choix {
     width: 33%;
   }

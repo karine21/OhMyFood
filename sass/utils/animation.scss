@@ -116,8 +116,9 @@
   border-radius: 15px;
   box-shadow:1px 5px 11px -2px #a19f9f; ;
   cursor: pointer;
-  padding-left: 0.5rem;
   transition: all 1s;
+  justify-content: space-between;
+  padding-left: 0.5rem;
 } 
 /*menu*/
 .clic_choix:hover {
@@ -127,7 +128,7 @@
   opacity: 1;
   animation: clic_choix 1s forwards;
   transition: transform 0.3s ease-in-out; 
-  transform: translate(10px);
+  transform: translate(0px);
   margin: 0;
 }
 .clic_choix i:hover {
