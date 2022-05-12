@@ -98,14 +98,14 @@
 }
 /*animation rotation et choix menu*/
 .clic_choix {
-  width: 60px;
+  width: 20%;
   border-radius: 0 1rem 1rem 0;
-  text-align: center;
   color: #FFF;
   margin: -1rem -5rem -1rem -2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translate(0px);
 }
 .choix_plat {
   display: flex;
@@ -121,8 +121,12 @@
 } 
 /*menu*/
 .clic_choix:hover {
-  animation: transition 0.3s;
-  transition: all 0.3s ease-in-out;
+  
+}
+.clic_choix i:hover {
+  
+}
+.choix_plat:hover .clic_choix :hover {
   background-color: #99E2D0;
   opacity: 1;
   animation: clic_choix 1s forwards;
@@ -130,16 +134,11 @@
   transform: translate(0px);
   margin: 0;
 }
-.clic_choix i:hover {
+.choix_plat .clic_choix i:hover {
   color: white;
   animation: rotate 1s ease forwards;
 }
-@keyframes clic_choix {
-  to {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
+
 .clic_choix i {
   padding: 0;
 }

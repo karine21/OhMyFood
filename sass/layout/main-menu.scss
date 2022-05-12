@@ -91,8 +91,7 @@ h4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  
+  } 
 .prix {
   padding: 5px;
   display: flex;
@@ -225,34 +224,24 @@ h4 {
     flex-direction: row;
   }
   .cards_choix {
-    width: 33%;
+    width: 30%;
   }
-  .choix_plat {
-    display: flex;
-    margin: 0 0px 15px 5px;
-    width: 90%;
-    overflow: hidden;
-    background-color: #FFF;
-    border-radius: 15px;
-    box-shadow: 1px 5px 11px -2px #a19f9f;
-    cursor: pointer;
-    transition: all 1s;
-    justify-content: space-between;
-    padding-left: 0.5rem;
-}
   .texte {
     margin-top: 10px;
     margin-bottom: -8px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 260px;
+    width: 80%;
+    flex:none;
 }
 .prix {
   padding: 5px;
   display: flex;
   align-items: flex-end;
-  
+  width: 20%;
+  flex: none;
+  justify-content: center;
 }
 .clic_choix:hover {
   animation: transition 0.3s;
