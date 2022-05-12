@@ -490,6 +490,11 @@ h2 {
   position: relative;
 }
 
+.cards_choix {
+  width: 95%;
+  margin: 0;
+}
+
 .cards_choix h3 {
   text-transform: uppercase;
   border-bottom: 3px solid #99E2D0;
@@ -553,6 +558,7 @@ h4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 80%;
   }
 
   .cards_choix {
