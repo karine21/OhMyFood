@@ -1001,7 +1001,7 @@ a {
 }
 
 /*menu*/
-.choix_plat .clic_choix:hover {
+.choix_plat:hover .clic_choix {
   /*animation: transition 0.3s;
   transition: all 0.3s ease-in-out;*/
   background-color: #99E2D0;

@@ -118,7 +118,7 @@
   padding-left: 0.5rem;
 } 
 /*menu*/
-.choix_plat .clic_choix:hover {
+.choix_plat:hover .clic_choix {
   /*animation: transition 0.3s;
   transition: all 0.3s ease-in-out;*/
   background-color: #99E2D0;
@@ -128,7 +128,7 @@
   width: 20%;
   background-color: #99E2D0;
   animation: clic_choix 1s forwards;
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
 @keyframes clic_choix {
   to {
