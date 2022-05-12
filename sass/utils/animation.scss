@@ -98,14 +98,15 @@
 }
 /*animation rotation et choix menu*/
 .clic_choix {
-  width: 20%;
   border-radius: 0 1rem 1rem 0;
   color: #FFF;
   margin: -1rem -5rem -1rem -2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translate(0px);
+}
+.clic_choix:hover {
+  
 }
 .choix_plat {
   display: flex;
@@ -120,25 +121,32 @@
   padding-left: 0.5rem;
 } 
 /*menu*/
-.clic_choix:hover {
-  
-}
-.clic_choix i:hover {
-  
-}
 .choix_plat:hover .clic_choix :hover {
+  animation: transition 0.3s;
+  transition: all 0.3s ease-in-out;
+  background-color: #99E2D0;
+  opacity: 1;
+  animation: clic_choix 1s forwards;
+  transition: transform 0.3s ease-in-out;
+  transform: translate(20px);
+  margin: 0;
+  width: 20%;
   background-color: #99E2D0;
   opacity: 1;
   animation: clic_choix 1s forwards;
   transition: transform 0.3s ease-in-out; 
-  transform: translate(0px);
   margin: 0;
+}
+@keyframes clic_choix {
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
 .choix_plat .clic_choix i:hover {
   color: white;
   animation: rotate 1s ease forwards;
 }
-
 .clic_choix i {
   padding: 0;
 }

@@ -59,8 +59,11 @@ h4 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 180px;
+ /* width: 180px;*/
+  width: 80%;
+  flex: none;
 }
+
 .choix_plat p {
   text-align: inherit;
   font-size: 0.9em;
@@ -72,6 +75,9 @@ h4 {
   padding: 5px;
   display: flex;
   align-items: flex-end;
+  width: 20%;
+  flex:none;
+  justify-content: center;
 }
 @media all and (min-width: 600px) and (max-width:766px){
   body {
@@ -92,20 +98,6 @@ h4 {
     flex-direction: row;
     flex-wrap: wrap;
   } 
-.prix {
-  padding: 5px;
-  display: flex;
-  align-items: flex-end;
-  padding-right: 2rem;
-}
-  .texte {
-    margin-top: 10px;
-    margin-bottom: -8px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 217px;
-}
   .cards_choix {
     width: 60%;
   }
@@ -126,6 +118,11 @@ h4 {
   align-items: center;
   justify-content: space-around;
 }
+.nom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
   .menu {
   background-color: #f6f6f6;
   flex-direction: column;
@@ -141,22 +138,8 @@ h4 {
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 98%;
 } 
-.texte {
-  margin-top: 10px;
-  margin-bottom: -8px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 200px;
-}
-.prix {
-  padding: 5px;
-  display: flex;
-  align-items: flex-end;
-  padding-right: 3rem;
-}
 .cards_choix {
   width: 45%;
 }
@@ -184,20 +167,6 @@ h4 {
   flex-direction: row;
   flex-wrap: wrap;
   }
-  .texte {
-  margin-top: 10px;
-  margin-bottom: -8px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 330px;
-}
-.prix {
-  padding: 5px;
-  display: flex;
-  align-items: flex-end;
-  padding-right: 2rem;
-}
-
 .cards_choix {
   width: 33%;
 }
@@ -224,35 +193,8 @@ h4 {
     flex-direction: row;
   }
   .cards_choix {
-    width: 30%;
+    width: 33%;
   }
-  .texte {
-    margin-top: 10px;
-    margin-bottom: -8px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 80%;
-    flex:none;
-}
-.prix {
-  padding: 5px;
-  display: flex;
-  align-items: flex-end;
-  width: 20%;
-  flex: none;
-  justify-content: center;
-}
-.clic_choix:hover {
-  animation: transition 0.3s;
-  transition: all 0.3s ease-in-out;
-  background-color: #99E2D0;
-  opacity: 1;
-  animation: clic_choix 1s forwards;
-  transition: transform 0.3s ease-in-out;
-  transform: translate(0px);
-  margin: 0;
-}
   .menu .restaurants-btn {
     margin-left: 35rem;
   }
