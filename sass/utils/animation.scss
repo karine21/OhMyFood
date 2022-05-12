@@ -118,21 +118,17 @@
   padding-left: 0.5rem;
 } 
 /*menu*/
-.choix_plat:hover .clic_choix :hover {
-  animation: transition 0.3s;
-  transition: all 0.3s ease-in-out;
+.choix_plat .clic_choix:hover {
+  /*animation: transition 0.3s;
+  transition: all 0.3s ease-in-out;*/
   background-color: #99E2D0;
-  opacity: 1;
-  animation: clic_choix 1s forwards;
+  /*animation: clic_choix 1s forwards;*/
   transition: transform 0.3s ease-in-out;
   transform: translate(20px);
-  margin: 0;
   width: 20%;
   background-color: #99E2D0;
-  opacity: 1;
   animation: clic_choix 1s forwards;
   transition: transform 0.3s ease-in-out; 
-  margin: 0;
 }
 @keyframes clic_choix {
   to {
