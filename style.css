@@ -550,20 +550,6 @@ h4 {
     flex-wrap: wrap;
   }
 
-  .choix_plat {
-    display: flex;
-    margin: 0 0px 15px 5px;
-    width: 100%;
-    overflow: hidden;
-    background-color: #FFF;
-    border-radius: 15px;
-    box-shadow: 1px 5px 11px -2px #a19f9f;
-    cursor: pointer;
-    transition: all 1s;
-    justify-content: space-between;
-    padding-left: 0.5rem;
-  }
-
   .prix {
     padding: 5px;
     display: flex;
@@ -665,15 +651,22 @@ h4 {
     justify-content: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .texte {
     margin-top: 10px;
     margin-bottom: -8px;
-    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 200px;
+    width: 330px;
+  }
+
+  .prix {
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+    padding-right: 2rem;
   }
 
   .cards_choix {
@@ -706,7 +699,47 @@ h4 {
   }
 
   .cards_choix {
-    width: 26%;
+    width: 33%;
+  }
+
+  .choix_plat {
+    display: flex;
+    margin: 0 0px 15px 5px;
+    width: 90%;
+    overflow: hidden;
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: 1px 5px 11px -2px #a19f9f;
+    cursor: pointer;
+    transition: all 1s;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+  }
+
+  .texte {
+    margin-top: 10px;
+    margin-bottom: -8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 260px;
+  }
+
+  .prix {
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .clic_choix:hover {
+    animation: transition 0.3s;
+    transition: all 0.3s ease-in-out;
+    background-color: #99E2D0;
+    opacity: 1;
+    animation: clic_choix 1s forwards;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(0px);
+    margin: 0;
   }
 
   .menu .restaurants-btn {
@@ -1030,7 +1063,6 @@ a {
   display: flex;
   margin: 0 0px 15px 5px;
   width: 90%;
-  overflow: hidden;
   background-color: #FFF;
   border-radius: 15px;
   box-shadow: 1px 5px 11px -2px #a19f9f;
