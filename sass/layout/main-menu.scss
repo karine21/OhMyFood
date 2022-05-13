@@ -63,9 +63,9 @@ h4 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
- /* width: 180px;*/
   width: 80%;
   flex: none;
+  flex: 1;
 }
 .choix_plat p {
   text-align: inherit;
@@ -171,12 +171,12 @@ h4 {
   flex-direction: row;
   flex-wrap: wrap;
   }
-.cards_choix {
-  width: 33%;
-}
-.menu .restaurants-btn {
-  margin-left: 25rem;
-}
+  .cards_choix {
+    width: 33%;
+  }
+  .menu .restaurants-btn {
+    margin-left: 25rem;
+  }
 }
 @media screen and (min-width:1301px) {
   body {

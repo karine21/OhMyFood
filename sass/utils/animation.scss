@@ -100,10 +100,11 @@
 .clic_choix {
   border-radius: 0 1rem 1rem 0;
   color: #FFF;
-  /*margin: -1rem -5rem -1rem -2rem;*/
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 18%;
+  transform: translateX(18px);
 }
 .choix_plat {
   display: flex;
@@ -113,36 +114,47 @@
   border-radius: 15px;
   box-shadow:1px 5px 11px -2px #a19f9f; ;
   cursor: pointer;
-  transition: all 1s;
   justify-content: space-between;
   padding-left: 0.5rem;
+  transition: all 1s ease-in;
 } 
+/*déscription des choix (entrées,plats,desserts)*/
+.texte  {
+  margin-top: 10px;
+  margin-bottom: -8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 80%;
+  flex: none;
+}
+.choix_plat p {
+  text-align: inherit;
+  font-size: 0.9em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 1s ease-in;
+}
 /*menu*/
-.choix_plat:hover .clic_choix {
-  /*animation: transition 0.3s;
-  transition: all 0.3s ease-in-out;*/
+.choix_plat:hover .clic_choix  {
   background-color: #99E2D0;
-  /*animation: clic_choix 1s forwards;*/
   transition: transform 0.3s ease-in-out;
-  transform: translate(20px);
-  width: 20%;
-  background-color: #99E2D0;
+  transform: translate(18px);
+  color: white;
+  animation: rotate 1s ease forwards;
   animation: clic_choix 1s forwards;
-  transition: transform 0.3s ease-in-out;
 }
 @keyframes clic_choix {
   to {
     transform: translate(0);
-    opacity: 1;
   }
 }
 .choix_plat .clic_choix i:hover {
   color: white;
   animation: rotate 1s ease forwards;
 }
-.clic_choix i {
-  padding: 0;
-}
+
 @keyframes rotate {
   to {
     transform: translate(0) rotate(360deg);
