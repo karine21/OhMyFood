@@ -117,6 +117,7 @@
   justify-content: space-between;
   padding-left: 0.5rem;
   transition: all 1s ease-in;
+  overflow: hidden;
 } 
 /*déscription des choix (entrées,plats,desserts)*/
 .texte  {
@@ -150,11 +151,13 @@
     transform: translate(0);
   }
 }
-.choix_plat .clic_choix i:hover {
+.choix_plat .clic_choix .fa-lg:hover {
   color: white;
   animation: rotate 1s ease forwards;
 }
-
+.choix_plat:hover .texte {
+  width: 60%;
+}
 @keyframes rotate {
   to {
     transform: translate(0) rotate(360deg);

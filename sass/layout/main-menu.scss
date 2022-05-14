@@ -56,24 +56,7 @@ h4 {
   margin-top: 10px;
   margin-bottom: -8px;
 }
-/*déscription des choix (entrées,plats,desserts)*/
-.texte  {
-  margin-top: 10px;
-  margin-bottom: -8px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 80%;
-  flex: none;
-  flex: 1;
-}
-.choix_plat p {
-  text-align: inherit;
-  font-size: 0.9em;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
+
 .prix {
   padding: 5px;
   display: flex;

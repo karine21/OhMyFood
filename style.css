@@ -509,26 +509,6 @@ h4 {
   margin-bottom: -8px;
 }
 
-/*déscription des choix (entrées,plats,desserts)*/
-.texte {
-  margin-top: 10px;
-  margin-bottom: -8px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 80%;
-  flex: none;
-  flex: 1;
-}
-
-.choix_plat p {
-  text-align: inherit;
-  font-size: 0.9em;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 .prix {
   padding: 5px;
   display: flex;
@@ -999,6 +979,7 @@ a {
   justify-content: space-between;
   padding-left: 0.5rem;
   transition: all 1s ease-in;
+  overflow: hidden;
 }
 
 /*déscription des choix (entrées,plats,desserts)*/
@@ -1036,9 +1017,13 @@ a {
     transform: translate(0);
   }
 }
-.choix_plat .clic_choix i:hover {
+.choix_plat .clic_choix .fa-lg:hover {
   color: white;
   animation: rotate 1s ease forwards;
+}
+
+.choix_plat:hover .texte {
+  width: 60%;
 }
 
 @keyframes rotate {
