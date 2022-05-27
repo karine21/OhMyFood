@@ -46,46 +46,14 @@ h3 {
   font-weight: 900;
 }
 
-a:link,
+/*a:link,
 a:visited {
   text-decoration: none;
   color: black;
-}
+}*/
 
 
-.explorer-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  background-color: #f7f7f7;
-  padding: 3rem 2rem;
-  .explorer-button {
-    border-radius: 25px;
-    height: 3.2rem;
-    width: 220px;
-    color: white;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(
-      180deg,
-      #ff79da 0%,
-      #9356dc 100%
-    );
-    box-shadow: 0 5px 7px 0px #80808033;
-    font-weight: 500;
-    font-size: 1em;
-    &:hover {
-      background: linear-gradient(
-        0deg,
-        #ff79da 0%,
-        #9356dc 100%
-      );
-    }
-  }
-}
+
 
 .navbar {
   background-color: white;
@@ -202,6 +170,10 @@ a:visited {
             margin-right: 1rem;
             max-width: 100%;
           }
+        }
+        .menu__platItem__descText p {
+          font-size: 0.9em;
+          text-align: inherit;
         }
         .menu__platItem__select {
           width: 7rem;

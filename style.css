@@ -46,7 +46,8 @@ section p {
 ol {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
+  margin-left: 2rem;
 }
 
 #genre li {
@@ -62,6 +63,7 @@ ol {
   position: relative;
   display: flex;
   margin-right: 1rem;
+  height: 60px;
 }
 
 .number {
@@ -123,7 +125,6 @@ figcaption p {
 .card_resto {
   padding-left: 1rem;
   font-family: "Roboto";
-  line-height: 0.5;
   padding-bottom: 5px;
 }
 
@@ -134,6 +135,7 @@ figcaption p {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 15px 0 rgb(201, 198, 198);
   position: relative;
+  height: 230px;
 }
 
 .card_new {
@@ -188,6 +190,22 @@ figcaption p {
     flex-direction: column;
     width: 70%;
     margin-left: 4rem;
+  }
+
+  #genre li {
+    align-items: center;
+    background-color: #F5EDFF;
+    flex-grow: 1;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1.2rem;
+    box-shadow: 2px 1px 8px -3px rgb(161, 159, 159);
+    margin-bottom: 1.5rem;
+    list-style: none;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    margin-right: 1rem;
+    height: 60px;
   }
 
   #Restaurants {
@@ -317,6 +335,21 @@ figcaption p {
     justify-content: center;
   }
 
+  .explorer-button {
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    text-decoration: none;
+    color: white;
+    border: none;
+    box-shadow: 2px 1px 8px -3px grey;
+    width: 220px;
+    height: 45px;
+    text-align: center;
+    margin: 3rem 4rem 3rem 33rem;
+    cursor: pointer;
+  }
+
   .genre h2 {
     margin: 3rem 0 3rem 3.5rem;
     font-family: "Roboto";
@@ -343,6 +376,8 @@ figcaption p {
     position: relative;
     display: flex;
     margin-right: 1.5rem;
+    margin-left: 3rem;
+    height: 60px;
   }
 
   /*restaurant*/
@@ -387,6 +422,21 @@ figcaption p {
     flex-direction: column;
     display: flex;
     justify-content: center;
+  }
+
+  .explorer-button {
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    text-decoration: none;
+    color: white;
+    border: none;
+    box-shadow: 2px 1px 8px -3px grey;
+    width: 220px;
+    height: 45px;
+    text-align: center;
+    margin: 3rem 4rem 3rem 16rem;
+    cursor: pointer;
   }
 
   .genre h2 {
@@ -484,38 +534,11 @@ h3 {
   font-weight: 900;
 }
 
-a:link,
+/*a:link,
 a:visited {
   text-decoration: none;
   color: black;
-}
-
-.explorer-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  background-color: #f7f7f7;
-  padding: 3rem 2rem;
-}
-.explorer-container .explorer-button {
-  border-radius: 25px;
-  height: 3.2rem;
-  width: 220px;
-  color: white;
-  cursor: pointer;
-  border: none;
-  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  box-shadow: 0 5px 7px 0px rgba(128, 128, 128, 0.2);
-  font-weight: 500;
-  font-size: 1em;
-}
-.explorer-container .explorer-button:hover {
-  background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
-}
-
+}*/
 .navbar {
   background-color: white;
   height: 80px;
@@ -652,6 +675,12 @@ a:visited {
   margin-bottom: 1rem;
   margin-right: 1rem;
   max-width: 100%;
+}
+.restaurant .gridMenu .menu__entrees .menu__platItem .menu__platItem__descText p,
+.restaurant .gridMenu .menu__plats .menu__platItem .menu__platItem__descText p,
+.restaurant .gridMenu .menu__desserts .menu__platItem .menu__platItem__descText p {
+  font-size: 0.9em;
+  text-align: inherit;
 }
 .restaurant .gridMenu .menu__entrees .menu__platItem .menu__platItem__select,
 .restaurant .gridMenu .menu__plats .menu__platItem .menu__platItem__select,
@@ -982,23 +1011,6 @@ body .restaurant .gridMenu .menu__desserts .menu__platItem .menu__platItem__sele
 }
 
 /*btn index*/
-.restaurants_btn {
-  padding: 10px;
-  border-radius: 20px;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), #FF79DA);
-  /*base couleur*/
-  text-decoration: none;
-  color: white;
-  border: none;
-  box-shadow: 2px 1px 8px -3px gray;
-  width: 250px;
-  height: 25px;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-
 .restaurants_btn:hover {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -1041,13 +1053,61 @@ body .restaurant .gridMenu .menu__desserts .menu__platItem .menu__platItem__sele
   color: white;
   border: none;
   box-shadow: 2px 1px 8px -3px gray;
-  width: 145px;
-  height: 25px;
+  width: 220px;
+  height: 45px;
   text-align: center;
   margin: 3rem 4rem 3rem 5rem;
   cursor: pointer;
 }
 
+@media (min-width: 767px) {
+  .explorer-button {
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    text-decoration: none;
+    color: white;
+    border: none;
+    box-shadow: 2px 1px 8px -3px grey;
+    width: 220px;
+    height: 45px;
+    text-align: center;
+    margin: 3rem 4rem 3rem 16rem;
+    cursor: pointer;
+  }
+}
+@media (min-width: 900px) {
+  .explorer-button {
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    text-decoration: none;
+    color: white;
+    border: none;
+    box-shadow: 2px 1px 8px -3px grey;
+    width: 220px;
+    height: 45px;
+    text-align: center;
+    margin: 3rem 4rem 3rem 24rem;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1301px) {
+  .explorer-button {
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    text-decoration: none;
+    color: white;
+    border: none;
+    box-shadow: 2px 1px 8px -3px grey;
+    width: 220px;
+    height: 45px;
+    text-align: center;
+    margin: 3rem 4rem 3rem 33rem;
+    cursor: pointer;
+  }
+}
 .explorer-button:hover {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -1272,15 +1332,14 @@ body .restaurant .gridMenu .menu__desserts .menu__platItem .menu__platItem__sele
 }
 
 /*déscription des choix (entrées,plats,desserts)*/
-.choix_plat p {
+/*.choix_plat p {
   text-align: inherit;
   font-size: 0.9em;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   transition: all 1s ease-in;
-}
-
+}*/
 /*texte*/
 .menu__platItem__desc {
   width: 100%;
