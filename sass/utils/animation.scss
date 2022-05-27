@@ -86,49 +86,28 @@
   cursor: pointer;
 }
 /*animation vers le haut menu*/
-.choix_plat {
-  animation:back 2s ease-out;
-  z-index: 1;
-}
+
   @keyframes back {
     to {
         opacity:1;
         transform: translateY(-33%);
     }  
 }
-/*animation rotation et choix menu*/
-.clic_choix {
-  border-radius: 0 1rem 1rem 0;
-  color: #FFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 18%;
-  transform: translateX(18px);
+.m1 {
+  animation: fadeInUp 1.5s backwards ease-in-out 0s 1;
 }
-.choix_plat {
-  display: flex;
-  margin: 0 0px 15px 5px;
-  width: 90%;
-  background-color: #FFF;
-  border-radius: 15px;
-  box-shadow:1px 5px 11px -2px #a19f9f; ;
-  cursor: pointer;
-  justify-content: space-between;
-  padding-left: 0.5rem;
-  transition: all 1s ease-in;
-  overflow: hidden;
-} 
+.p1 {
+  animation: fadeInUp 1.5s backwards ease-in-out 0.1s 1;
+}
+.fas .fa-check {
+  color: #99e2d0;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: white;
+  transition-duration: 0.5s;
+}
 /*déscription des choix (entrées,plats,desserts)*/
-.texte  {
-  margin-top: 10px;
-  margin-bottom: -8px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 80%;
-  flex: none;
-}
+
 .choix_plat p {
   text-align: inherit;
   font-size: 0.9em;
@@ -137,35 +116,29 @@
   white-space: nowrap;
   transition: all 1s ease-in;
 }
-/*menu*/
-.choix_plat:hover .clic_choix  {
-  background-color: #99E2D0;
-  transition: transform 0.3s ease-in-out;
-  transform: translate(18px);
-  color: white;
-  animation: rotate 1s ease forwards;
-  animation: clic_choix 1s forwards;
-}
-@keyframes clic_choix {
-  to {
-    transform: translate(0);
+/*texte*/
+.menu__platItem__desc {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+  .menu__platItem__descText {
+    width: 100%;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 100%;
+    overflow: hidden;
+    > * {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 100%;
+    }
   }
 }
-.choix_plat .clic_choix .fa-lg:hover {
-  color: white;
-  animation: rotate 1s ease forwards;
-}
-.choix_plat:hover .texte {
-  width: 60%;
-}
-@keyframes rotate {
-  to {
-    transform: translate(0) rotate(360deg);
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
+/*choix*/
 
 
 
