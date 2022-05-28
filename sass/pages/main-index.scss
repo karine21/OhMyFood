@@ -18,6 +18,7 @@ form {
     flex-direction: row;
     background-color: rgb(234 234 234 );
     height: 50px;
+    width: 100%;
 }
 form i {
     margin-right: 1.5rem;
@@ -296,20 +297,7 @@ figcaption p {
         display: flex;
         justify-content: center;
     }
-    .explorer-button {
-        padding: 10px;
-        border-radius: 20px;
-        background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-        text-decoration: none;
-        color: white;
-        border: none;
-        box-shadow: 2px 1px 8px -3px grey;
-        width: 220px;
-        height: 45px;
-        text-align: center;
-        margin: 3rem 4rem 3rem 33rem;
-        cursor: pointer;
-    }
+    
     .genre h2 {
         margin: 3rem 0 3rem 3.5rem;
         font-family: "Roboto";
