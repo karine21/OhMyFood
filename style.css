@@ -564,6 +564,7 @@ h3 {
   grid-template-rows: repeat(3, 1fr);
   row-gap: 1rem;
   padding: 1rem 0 0 0;
+  width: 95%;
 }
 
 .restaurant .gridMenu .menu__entrees,
@@ -698,6 +699,7 @@ body footer ul {
 
 body footer ul .footer-link {
   color: white !important;
+  text-decoration: none;
 }
 
 body footer ul .footer-icon {
