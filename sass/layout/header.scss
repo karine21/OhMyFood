@@ -8,5 +8,10 @@
    box-shadow:0 0 0.5rem gray;
 }
 .header-index img {
-   width:200px
+   width:200px;
+}
+.header-description {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }

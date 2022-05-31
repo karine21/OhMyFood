@@ -1,6 +1,25 @@
 @charset "UTF-8";
 /*btn index*/
-
+.explorer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: #f7f7f7;
+  padding: 3rem 2rem;
+}
+.explorer-button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: #f7f7f7;
+  padding: 3rem 2rem;
+}
 .restaurants_btn:hover {
   -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
@@ -22,39 +41,7 @@
 .explorer-container .explorer-button:hover {
   background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
 }
-.explorer-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  background-color: #f7f7f7;
-  padding: 3rem 2rem;
-  .explorer-button {
-    border-radius: 25px;
-    height: 3.2rem;
-    width: 220px;
-    color: white;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(
-      180deg,
-      #ff79da 0%,
-      #9356dc 100%
-    );
-    box-shadow: 0 5px 7px 0px #80808033;
-    font-weight: 500;
-    font-size: 1em;
-    &:hover {
-      background: linear-gradient(
-        0deg,
-        #ff79da 0%,
-        #9356dc 100%
-      );
-    }
-  }
-}
+
 /*btn commander*/
 .explorer-button {
   padding: 10px;
@@ -83,7 +70,7 @@
     width: 220px;
     height: 45px;
     text-align: center;
-    margin: 3rem 4rem 3rem 17rem;
+    margin: 3rem 4rem 3rem 5rem;
     cursor: pointer;
 }
 .explorer-container .explorer-button {
@@ -100,7 +87,7 @@
   margin: 5rem;
 }
 }
-@media (min-width: 900px) {
+@media (min-width: 993px) {
 .explorer-button {
   padding: 10px;
   border-radius: 20px;
@@ -112,7 +99,7 @@
   width: 220px;
   height: 45px;
   text-align: center;
-  margin: 3rem 4rem 3rem 24rem;
+  margin: 3rem 4rem 3rem 5rem;
   cursor: pointer;
 }
 }
@@ -128,7 +115,7 @@
   width: 220px;
   height: 45px;
   text-align: center;
-  margin: 3rem 4rem 3rem 33rem;
+  margin: 3rem 4rem 3rem 5rem;
   cursor: pointer;
 }
 }
